@@ -19,6 +19,9 @@ header {
     margin-bottom : 8px;
 }
 .headerContainer {
+    position : fixed;
+    background-color : #f5e9d8;
+    z-index : 500;
     width: 390px;
     height: 76px;
 }
@@ -29,7 +32,7 @@ header {
 }
 .headerNav {
     position : relative;
-    margin : -76px 0 0 101px;
+    margin-bottom : 101px;
     display : none;
     width: 289px;
     height: 820px;
@@ -68,6 +71,7 @@ header {
     height: 32px;
 }
 .headerText {
+    padding-top : 76px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -17,12 +17,14 @@ header{
     background-color: #F2E9D8;
 }
 .headerContainer{
+    position : fixed;
     width: 1920px;
     height: 102px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding : 0 320px;
+    background-color: #F2E9D8;
 }
 .headerContent img{
     width: 130px;
