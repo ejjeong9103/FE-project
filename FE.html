@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="FE.css" media="screen and (min-width: 701px)">
+    <link rel="stylesheet" href="FEmobile.css" media="screen and (max-width: 700px)">
+
+
+</head>
+<body>
+<header>
+    <div class="headerContainer">
+        <div class="headerContent">
+            <img class="headerLogo" src="img/Logo-fin.svg" alt="">
+            <button class="menuBtn">
+                <img src="img/menu.svg" alt="">
+            </button>
+        </div>
+        <nav class="headerNav">
+            <button class="arrowRight">
+                <img src="img/arrow-right.svg" alt="">
+            </button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <button class="downloadBtn">Download
+
+            </button>
+
+        </nav>
+    </div>
+    <div class="headerDiv">
+        <div class="headerText">
+            <h1>Lorem Ipsum is simply<br />
+                dummy text of the printing and</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.<br />
+                Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown</p>
+            <button class="downloadBtn">Download</button>
+        </div>
+        <div class="headerCatDiv">
+            <img src="img/header_cat.png" alt="종이박스를 뒤집어 쓴 호두">
+        </div>
+    </div>
+</header>
+<main>
+    <section class="lyingDiv">
+        <div class="lyingDivImg">
+            <img src="img/lyingcat.png" alt="누워있는 호두">
+        </div>
+        <div class="lyingText">
+            <h2>Lorem Ipsum is simply<br />dummy text of the printing<br />and dummy text</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+
+        </div>
+    </section>
+
+    <section class="dummyText">
+        <div>
+            <h2>dummy text of the printing and dummy</h2>
+            <p>Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br />
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery1">
+            <img src="img/cat1.png" alt="캣타워 위의 호두">
+            <img src="img/cat2.png" alt="콘센트를 바라보는 호두">
+            <img src="img/cat3.png" alt="노려보는 호두">
+
+        </div>
+        <div class="gallery2">
+            <img src="img/cat4.png" alt="근접샷 호두">
+            <img src="img/cat5.png" alt="올려다보는 호두">
+            <img src="img/cat6.png" alt="하품하는 호두">
+        </div>
+    </section>
+
+    <section>
+    <div class="explore">
+        <h2>Continue exploring HODU</h2>
+        <button class="downloadBtn"><span>Show more</span></button>
+    </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="map">
+        <div class="mapText">
+            <h2>Where you’ll be</h2>
+            <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+        </div>
+        <div>
+            <img src="img/map2.png" alt="">
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="subContainer">
+            <div class="subText">
+                <h2>Subscribe to our Blog post</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
+                Lorem Ipsum has been the industry's standard dummy text </p>
+            </div>
+            <div class="subForm">
+                <label for="e-mail"></label>
+                <input type="text" id="e-mail" placeholder="Enter your e-mail address">
+                <button class="downloadBtn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="modal" class="modal">
+        <div>
+            <div class="modal1">
+                <img src="img/modalcat.png" alt="">
+                <h2>Thank you!</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing industry. </p>
+            </div>
+            <div class="modal2">
+                <button class="downloadBtn">OK! I Love HODU</button>
+            </div>
+        </div>
+    </section>
+    <div class="catt">
+        <img src="img/catt.png" alt="">
+    </div>
+    <button id="topBtn" class="scroll">
+        <img src="img/keyboard_arrow_up-1.svg" alt="">
+    </button>
+
+</main>
+<footer>
+    <div class="footerContainer">
+        <div class="footerDiv1">
+            <img src="img/Logo-fin.svg" alt="">
+        </div>
+        <div class="footerDiv2">
+            <button class="iconBtn">
+                <img src="img/blog.png" alt="">
+            </button>
+            <button class="iconBtn">
+                <img src="img/instagram.png" alt="">
+            </button>
+            <button class="iconBtn">
+                <img src="img/facebook.png" alt="">
+            </button>
+            <button class="iconBtn">
+                <img src="img/youtube.png" alt="">
+            </button>
+        </div>
+    </div>
+    <div class="mobileFooter">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Terms of Use</a></li>
+        </ul>
+    </div>
+</footer>
+<script>
+    window.addEventListener('scroll', () => {
+        if (document.documentElement.scrollTop > 20) {
+            document.querySelector('.scroll').style.display = 'block';
+        } else {
+            document.querySelector('.scroll').style.display = 'none';
+        }
+    });
+    document.querySelector(".scroll").addEventListener("mouseover", function() {
+        this.querySelector("img").src = "img/keyboard_arrow_up-2.svg";
+    });
+
+    document.querySelector(".scroll").addEventListener("mouseout", function() {
+        this.querySelector("img").src = "img/keyboard_arrow_up-1.svg";
+    });
+    document.getElementById("topBtn").addEventListener("click", function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+    document.querySelector(".menuBtn").addEventListener("click", function() {
+        const nav = document.querySelector(".headerNav");
+        nav.style.display = "block";
+    });
+
+    document.querySelector(".arrowRight").addEventListener("click", function() {
+        const nav = document.querySelector(".headerNav");
+        nav.style.display = "none";
+    });
+
+    document.querySelector(".modal2 button").addEventListener("click", function() {
+        const nav = document.querySelector(".modal");
+        nav.style.display = "none";
+    });
+    document.querySelector(".subForm button").addEventListener("click", function() {
+        const Input = document.querySelector(".subForm input").value;
+        const emailCheck = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
+
+        if (Input === "") {
+            alert("이메일을 입력해 주세요.");
+        } else if (!emailCheck.test(Input)) {
+            alert("올바르지 않은 이메일 입니다.");
+        } else {
+            const modal = document.querySelector(".modal");
+            modal.style.display = "block";
+        }
+    });
+
+
+</script>
+</body>
+</html>
