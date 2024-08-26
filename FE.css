@@ -367,6 +367,7 @@ main {
     height: 50px;
     border : 1px solid #C4C4C4;
     border-radius : 100%;
+    z-index : 5000;
 }
 .scroll img {
     width: 40px;

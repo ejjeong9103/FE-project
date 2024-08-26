@@ -169,13 +169,6 @@
     </div>
 </footer>
 <script>
-    window.addEventListener('scroll', () => {
-        if (document.documentElement.scrollTop > 20) {
-            document.querySelector('.scroll').style.display = 'block';
-        } else {
-            document.querySelector('.scroll').style.display = 'none';
-        }
-    });
     document.querySelector(".scroll").addEventListener("mouseover", function() {
         this.querySelector("img").src = "img/keyboard_arrow_up-2.svg";
     });
@@ -190,7 +183,6 @@
         const nav = document.querySelector(".headerNav");
         nav.style.display = "block";
     });
-
     document.querySelector(".arrowRight").addEventListener("click", function() {
         const nav = document.querySelector(".headerNav");
         nav.style.display = "none";
@@ -203,7 +195,6 @@
     document.querySelector(".subForm button").addEventListener("click", function() {
         const Input = document.querySelector(".subForm input").value;
         const emailCheck = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
-
         if (Input === "") {
             alert("이메일을 입력해 주세요.");
         } else if (!emailCheck.test(Input)) {
@@ -213,7 +204,24 @@
             modal.style.display = "block";
         }
     });
-
+    window.addEventListener('scroll',function() {
+        const scrollBtn = document.querySelector('.scroll');
+        const footer = document.querySelector('footer');
+        const footerTop = footer.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        const footerHeight = 160;
+        const offset = 25;
+        if (footerTop <= windowHeight) {
+            scrollBtn.style.bottom = `185px`;
+        } else {
+            scrollBtn.style.bottom = `25px`;
+        }
+        if (document.documentElement.scrollTop > 20) {
+            scrollBtn.style.display = 'block';
+        } else {
+            scrollBtn.style.display = 'none';
+        }
+    });
 </script>
 </body>
 </html>
