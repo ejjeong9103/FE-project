@@ -19,7 +19,7 @@ header {
     margin-bottom : 8px;
 }
 .headerContainer {
-    position : fixed;
+    position : absolute;
     background-color : #f5e9d8;
     z-index : 5000;
     width: 390px;
@@ -33,7 +33,7 @@ header {
 }
 .headerNav {
     position : relative;
-    margin-bottom : 101px;
+    margin : -76px 0 101px 101px;
     display : none;
     width: 289px;
     height: 820px;
@@ -78,7 +78,7 @@ header {
     align-items: center;
 }
 .headerText h1 {
-    width: 251px;
+    width: 279px;
     height: 90px;
     font-size: 24px;
     font-weight: 700;
@@ -87,7 +87,7 @@ header {
     margin-top : 40px;
 }
 .headerText p {
-    width: 270px;
+    width: 232px;
     height: 98px;
     font-size: 14px;
     font-weight: 400;
