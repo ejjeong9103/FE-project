@@ -19,13 +19,12 @@ header {
     margin-bottom : 8px;
 }
 .headerContainer {
-    position : absolute;
+    position : fixed;
     background-color : #f5e9d8;
     z-index : 5000;
     width: 390px;
     height: 76px;
 }
-
 .headerContent {
     display: flex;
     justify-content: space-between;
