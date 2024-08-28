@@ -24,10 +24,12 @@ FrameWork : IntelliJ
 - 첫 화면에서의 헤더 위치는 고정
 - 스크롤시 헤더위치가 고정됨
 #### PC에서의 화면  
+
 <img src="https://github.com/user-attachments/assets/ac8aae10-3c62-4c13-80ef-78cf8acba0da" alt="Sample Image" width="300" height="auto">
 <img src="https://github.com/user-attachments/assets/8392fb06-7757-46ac-9d3e-0751bc1cac92" alt="Sample Image" width="300" height="auto">
  
 #### mobile에서의 화면  
+
 <img src="https://github.com/user-attachments/assets/56c5cf37-9a56-47a5-8663-50dbad53a848" alt="Sample Image" width="300" height="auto">
 <img src="https://github.com/user-attachments/assets/f6a40a1f-40bd-49d9-a513-d7d3e5348174" alt="Sample Image" width="300" height="auto">
 <br />
